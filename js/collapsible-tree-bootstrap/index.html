@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.0/morph/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="dist/css/bstreeview.min.css" rel="stylesheet">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <style>
+    body { background: #fafafa; }
+    .container { margin: 150px auto; }
+  </style>
+  <title>Tree View For Bootstrap 5 Example</title>
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/other/collapsible-tree-bootstrap.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="col-md-12">
+<h1>Tree View For Bootstrap 5 Example</h1>
+<p class="lead">Create a dynamic, collapsible/expandable tree view with the latest Bootstrap 5 framework.</p>
+        </div>
+      </div>
+        <div class="col-md-4 pt-5">
+          <div id="tree">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <script src="dist/js/bstreeview.min.js">
+  </script>
+  <script>
+    $(function () {
+
+      var json = [
+  {
+    text: "Node 1",
+    icon: "fa fa-folder",
+    nodes: [
+      {
+        text: "Sub Node 1",
+        icon: "fa fa-folder",
+        nodes: [
+          {
+            id:    "sub-node-1",
+            text:  "Sub Child Node 1",
+            icon:  "fa fa-folder",
+            class: "nav-level-3",
+            href:  "https://google.com"
+          },
+          {
+            text: "Sub Child Node 2",
+            icon: "fa fa-folder"
+          }
+        ]
+      },
+      {
+        text: "Sub Node 2",
+         icon: "fa fa-folder"
+      }
+    ]
+  },
+  {
+    text: "Node 2",
+    icon: "fa fa-folder"
+  },
+  {
+    text: "Node 3",
+    icon: "fa fa-folder"
+  },
+  {
+    text: "Node 4",
+    icon: "fa fa-folder"
+  },
+  {
+    text: "Node 5",
+    icon: "fa fa-folder"
+  }
+];
+
+      $('#tree').bstreeview({ data: json });
+
+    });
+  </script>
+  <script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
