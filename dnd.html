@@ -35,6 +35,59 @@
         <meta charset = "UTF-8" />
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 		<title>William F. Nicholson</title>
+
+        <!-- jQuery functions influencing body of document -->
+        <script>
+            $('document').ready(function() {
+                $('#Lokali-People-Cultures-Ariales').click(function() {
+                    $('#wiki-page').html(loadAriales())
+                })
+
+                $('#Lokali-People-Cultures-Astis').click(function() {
+                    $('#wiki-page').html(loadAstis())
+                })
+
+                $('#Lokali-People-Cultures-Caybluff').click(function() {
+                    $('#wiki-page').html(loadCaybluff())
+                })
+
+                $('#Lokali-People-Cultures-Gara').click(function() {
+                    $('#wiki-page').html(loadGara())
+                })
+
+                $('#Lokali-People-Cultures-Godobald').click(function() {
+                    $('#wiki-page').html(loadGodobald())
+                })
+
+                $('#Lokali-People-Cultures-Skoro').click(function() {
+                    $('#wiki-page').html(loadSkoro())
+                })
+
+                $('#Lokali-People-Cultures-Ngyemu').click(function() {
+                    $('#wiki-page').html(loadNgyemu())
+                })
+
+                $('#Lokali-People-Cultures-Kotal').click(function() {
+                    $('#wiki-page').html(loadKotal())
+                })
+
+                $('#Lokali-People-Cultures-Ryuga').click(function() {
+                    $('#wiki-page').html(loadRyuga())
+                })
+
+                $('#Lokali-People-Cultures-Tehueypec').click(function() {
+                    $('#wiki-page').html(loadTehueypec())
+                })
+
+                $('#Lokali-People-Cultures-Tizarna').click(function() {
+                    $('#wiki-page').html(loadTizarna())
+                })
+
+                $('#Lokali-People-Cultures-Vevide').click(function() {
+                    $('#wiki-page').html(loadVevide())
+                })
+            });
+        </script>
     </head>
     <body>
         <!-- Navigation Bar at top of page -->
@@ -77,13 +130,6 @@
 
                     </div>
                     <!-- jQuery that will run on document click and load HTML into element id wiki-page -->
-                    <script>
-                        $('document').ready(function() {
-                            $('#Lokali-People-Cultures-Ariales').click(function() {
-                                $('#wiki-page').load("file://C:/Users/William F. Nicholson/Documents/GitHub/William-N.github.io/wiki-pages/ariales.html")
-                            })
-                        });
-                    </script>
                 </div>
                 <div class="col-2">
                     <!-- DOM element that will contain search feature to load pages more quickly -->
