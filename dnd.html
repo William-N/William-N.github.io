@@ -36,6 +36,13 @@
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 		<title>William F. Nicholson</title>
 
+        <!-- CSS needed to enable sticky top -->
+        <style>
+            .col-8.sticky-top {
+                align-self: flex-start;
+            }
+        </style>
+
         <!-- jQuery functions influencing body of document -->
         <script>
             $('document').ready(function() {
@@ -124,7 +131,7 @@
                         });
                     </script>
                 </div>
-                <div class="col-8">
+                <div class="col-8 sticky-top">
                     <!-- DOM element that jQuery will insert text into -->
                     <div id="wiki-page">
 
