@@ -43,7 +43,7 @@
             }
         </style>
 
-        <!-- jQuery functions influencing body of document -->
+        <!-- jQuery functions influencing body of document, known as wiki-page -->
         <script>
             $('document').ready(function() {
                 $('#Lokali-People-Cultures-Ariales').click(function() {
@@ -93,6 +93,30 @@
                 $('#Lokali-People-Cultures-Vevide').click(function() {
                     $('#wiki-page').html(loadVevide())
                 })
+
+                $('#Lokali-Geography-Continents-Anes').click(function() {
+                    $('#wiki-page').html(loadAnes())
+                })
+
+                $('#Lokali-Geography-Continents-Durios').click(function() {
+                    $('#wiki-page').html(loadDurios())
+                })
+
+                $('#Lokali-Geography-Continents-Duria').click(function() {
+                    $('#wiki-page').html(loadDuria())
+                })
+
+                $('#Magi-Early_Lokalian_Theory').click(function() {
+                    $('#wiki-page').html(loadEarlyLokalianTheory())
+                })
+
+                $('#Magi-Magi_2nd_Industrial_Era').click(function() {
+                    $('#wiki-page').html(loadMagiInTheSecondIndustrialEra())
+                })
+
+                $('#Magi-Industrial_Lokalian_Theory').click(function() {
+                    $('#wiki-page').html(loadIndustrialLokalianTheory())
+                })
             });
         </script>
     </head>
@@ -136,7 +160,6 @@
                     <div id="wiki-page">
 
                     </div>
-                    <!-- jQuery that will run on document click and load HTML into element id wiki-page -->
                 </div>
                 <div class="col-2">
                     <!-- DOM element that will contain search feature to load pages more quickly -->
