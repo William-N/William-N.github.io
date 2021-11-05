@@ -1,293 +1,88 @@
 /**
- *  
- * @TODO explain what this code does
+ * 
+ * 
  * 
  */
-let tree =
-[
-    {
-        text: "Worlds of Magnus",
-        icon: "fa fa-folder",
-        nodes:
-        [
-            {
-                text: "Ciri",
-                icon: "fa fa-folder",
-            },
-            {
-                text: "Wolin",
-                icon: "fa fa-folder"
-            },
-            {
-                text: "Lokali",
-                icon: "fa fa-folder",
-                nodes:
-                [
-                    {
-                        text:  "Geography",
-                        icon:  "fa fa-folder",
-                        nodes:
-                        [
-                            {
-                                text: "Climate",
-                                icon: "fa fa-folder"
-                            },
-                            {
-                                text: "Continents",
-                                icon: "fa fa-folder",
-                                nodes:
-                                [
-                                    {
-                                        id:    "Lokali-Geography-Continents-Anes",
-                                        text:  "Anes",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-Geography-Continents-Durios",
-                                        text:  "Durios",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-Geography-Continents-Duria",
-                                        text:  "Duria",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    }
-                                ]
-                            },
-                            {
-                                text: "Towns & Cities",
-                                icon: "fa fa-folder"
-                            },
-                            {
-                                text: "Rivers",
-                                icon: "fa fa-folder"
-                            }
-                        ]
-                    },
-                    {
-                        text: "People",
-                        icon: "fa fa-folder",
-                        nodes:
-                        [
-                            {
-                                text: "Races",
-                                icon: "fa fa-folder"
-                            },
-                            {
-                                text: "Cultures",
-                                icon: "fa fa-folder",
-                                nodes:
-                                [
-                                    {
-                                        id:    "Lokali-People-Cultures-Ariales",
-                                        text:  "Ariales",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Astis",
-                                        text:  "Astis",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Caybluff",
-                                        text:  "Caybluff",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Gara",
-                                        text:  "Gara",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Godobald",
-                                        text:  "Godobald",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Skoro",
-                                        text:  "Skoro",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Kotal",
-                                        text:  "Kotal",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Ngyemu",
-                                        text:  "Ngyemu",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Ryuga",
-                                        text:  "Ryuga",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Tehueypec",
-                                        text:  "Tehueypec",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Tizarna",
-                                        text:  "Tizarna",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Cultures-Vevide",
-                                        text:  "Vevide",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    }
-                                ]
-                            },
-                            {
-                                text: "Technology",
-                                icon: "fa fa-folder"
-                            },
-                            {
-                                text: "Government",
-                                icon: "fa fa-folder"
-                            },
-                            {
-                                text: "Economics",
-                                icon: "fa fa-folder"
-                            },
-                            {
-                                text: "Society",
-                                icon: "fa fa-folder"
-                            },
-                            {
-                                text: "Religion",
-                                icon: "fa fa-folder",
-                                nodes:
-                                [
-                                    {
-                                        id:    "Lokali-People-Religion-Skorian-Pantheon",
-                                        text:  "Skorian Pantheon",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Religion-Ulah",
-                                        text:  "Ulah",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Religion-Ryugan-Philosophy",
-                                        text:  "Ryugan Philosophy",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Religion-Wastrada",
-                                        text:  "Wastrada",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Religion-Ciri-Wolin",
-                                        text:  "Ciri & Wolin",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    },
-                                    {
-                                        id:    "Lokali-People-Religion-Dhinir-Duohr",
-                                        text:  "Dhinir & Duohr",
-                                        icon:  "fas fa-file",
-                                        href:  ""
-                                    }
-                                ]
-                            },
-                            {
-                                text: "History",
-                                icon: "fa fa-folder"
-                            },
-                            {
-                                text: "Language",
-                                icon: "fa fa-folder"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                text: "Osada",
-                icon: "fa fa-folder"
-            },
-            {
-                text: "Gara",
-                icon: "fa fa-folder"
-            }
-        ]
-    },
-    {
-        text: "Beyond Magnus",
-        icon: "fa fa-folder",
-        nodes:
-        [
-            {
-                text: "Kroy Techocracy",
-                icon: "fa fa-folder"
-            }
-        ]
-    },
-    {
-        text: "Magi",
-        icon: "fa fa-folder",
-        nodes:
-        [
-            {
-                id:    "Magi-Early_Lokalian_Theory",
-                text:  "Early Lokalian Theory",
-                icon:  "fas fa-file",
-                href:  ""
-            },
-            {
-                id:    "Magi-Magi_2nd_Industrial_Era",
-                text:  "Magi in the Second Lokalian Industrial Era",
-                icon:  "fas fa-file",
-                href:  ""
-            },
-            {
-                id:    "Magi-Industrial_Lokalian_Theory",
-                text:  "Industrial Lokalian Theory",
-                icon:  "fas fa-file",
-                href:  ""
-            }
-        ]
-    },
-    {
-        text: "Game Master Materials",
-        icon: "fa fa-folder",
-        nodes:
-        [
-            {
-                text: "Encounters",
-                icon: "fa fa-folder"
-            },
-            {
-                text: "Session Outlines",
-                icon: "fa fa-folder"
-            }
-        ]
-    }
-]
+
+$('document').ready(function() {
+    $('#Lokali-People-Cultures-Ariales').click(function() {
+        $('#wiki-page').html(loadAriales())
+    })
+
+    $('#Lokali-People-Cultures-Astis').click(function() {
+        $('#wiki-page').html(loadAstis())
+    })
+
+    $('#Lokali-People-Cultures-Caybluff').click(function() {
+        $('#wiki-page').html(loadCaybluff())
+    })
+
+    $('#Lokali-People-Cultures-Gara').click(function() {
+        $('#wiki-page').html(loadGara())
+    })
+
+    $('#Lokali-People-Cultures-Godobald').click(function() {
+        $('#wiki-page').html(loadGodobald())
+    })
+
+    $('#Lokali-People-Cultures-Skoro').click(function() {
+        $('#wiki-page').html(loadSkoro())
+    })
+
+    $('#Lokali-People-Cultures-Ngyemu').click(function() {
+        $('#wiki-page').html(loadNgyemu())
+    })
+
+    $('#Lokali-People-Cultures-Kotal').click(function() {
+        $('#wiki-page').html(loadKotal())
+    })
+
+    $('#Lokali-People-Cultures-Ryuga').click(function() {
+        $('#wiki-page').html(loadRyuga())
+    })
+
+    $('#Lokali-People-Cultures-Tehueypec').click(function() {
+        $('#wiki-page').html(loadTehueypec())
+    })
+
+    $('#Lokali-People-Cultures-Tizarna').click(function() {
+        $('#wiki-page').html(loadTizarna())
+    })
+
+    $('#Lokali-People-Cultures-Vevide').click(function() {
+        $('#wiki-page').html(loadVevide())
+    })
+
+    $('#Lokali-Geography-Continents-Anes').click(function() {
+        $('#wiki-page').html(loadAnes())
+    })
+
+    $('#Lokali-Geography-Continents-Durios').click(function() {
+        $('#wiki-page').html(loadDurios())
+    })
+
+    $('#Lokali-Geography-Continents-Duria').click(function() {
+        $('#wiki-page').html(loadDuria())
+    })
+
+    $('#Magi-Early_Lokalian_Theory').click(function() {
+        $('#wiki-page').html(loadEarlyLokalianTheory())
+    })
+
+    $('#Magi-Magi_2nd_Industrial_Era').click(function() {
+        $('#wiki-page').html(loadMagiInTheSecondIndustrialEra())
+    })
+
+    $('#Magi-Industrial_Lokalian_Theory').click(function() {
+        $('#wiki-page').html(loadIndustrialLokalianTheory())
+    })
+});
+
+/**
+ * 
+ *  
+ * 
+ */
 
 function loadArticle(title, text) {
     return `
@@ -373,6 +168,12 @@ function loadMagiInTheSecondIndustrialEra() {
 function loadIndustrialLokalianTheory() {
     return loadArticle(IndustrialLokalianTheoryTitle, IndustrialLokalianTheoryText)
 }
+
+/**
+ * 
+ * 
+ * 
+ */
 
 const ArialesTitle =`
 Ariales

@@ -26,7 +26,9 @@
         <script src="js\collapsible-tree-bootstrap\dist\js\bstreeview.min.js"></script>
 
         <!-- Local JS -->
-        <script src="js/dnd.js"></script>
+        <script src="js/dnd-tree.js"></script>
+        <script src="js/dnd-article.js"></script>
+        <script src="js/dnd-search.js"></script>
 
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/12709d2e6d.js" crossorigin="anonymous"></script>
@@ -42,83 +44,6 @@
                 align-self: flex-start;
             }
         </style>
-
-        <!-- jQuery functions influencing body of document, known as wiki-page -->
-        <script>
-            $('document').ready(function() {
-                $('#Lokali-People-Cultures-Ariales').click(function() {
-                    $('#wiki-page').html(loadAriales())
-                })
-
-                $('#Lokali-People-Cultures-Astis').click(function() {
-                    $('#wiki-page').html(loadAstis())
-                })
-
-                $('#Lokali-People-Cultures-Caybluff').click(function() {
-                    $('#wiki-page').html(loadCaybluff())
-                })
-
-                $('#Lokali-People-Cultures-Gara').click(function() {
-                    $('#wiki-page').html(loadGara())
-                })
-
-                $('#Lokali-People-Cultures-Godobald').click(function() {
-                    $('#wiki-page').html(loadGodobald())
-                })
-
-                $('#Lokali-People-Cultures-Skoro').click(function() {
-                    $('#wiki-page').html(loadSkoro())
-                })
-
-                $('#Lokali-People-Cultures-Ngyemu').click(function() {
-                    $('#wiki-page').html(loadNgyemu())
-                })
-
-                $('#Lokali-People-Cultures-Kotal').click(function() {
-                    $('#wiki-page').html(loadKotal())
-                })
-
-                $('#Lokali-People-Cultures-Ryuga').click(function() {
-                    $('#wiki-page').html(loadRyuga())
-                })
-
-                $('#Lokali-People-Cultures-Tehueypec').click(function() {
-                    $('#wiki-page').html(loadTehueypec())
-                })
-
-                $('#Lokali-People-Cultures-Tizarna').click(function() {
-                    $('#wiki-page').html(loadTizarna())
-                })
-
-                $('#Lokali-People-Cultures-Vevide').click(function() {
-                    $('#wiki-page').html(loadVevide())
-                })
-
-                $('#Lokali-Geography-Continents-Anes').click(function() {
-                    $('#wiki-page').html(loadAnes())
-                })
-
-                $('#Lokali-Geography-Continents-Durios').click(function() {
-                    $('#wiki-page').html(loadDurios())
-                })
-
-                $('#Lokali-Geography-Continents-Duria').click(function() {
-                    $('#wiki-page').html(loadDuria())
-                })
-
-                $('#Magi-Early_Lokalian_Theory').click(function() {
-                    $('#wiki-page').html(loadEarlyLokalianTheory())
-                })
-
-                $('#Magi-Magi_2nd_Industrial_Era').click(function() {
-                    $('#wiki-page').html(loadMagiInTheSecondIndustrialEra())
-                })
-
-                $('#Magi-Industrial_Lokalian_Theory').click(function() {
-                    $('#wiki-page').html(loadIndustrialLokalianTheory())
-                })
-            });
-        </script>
     </head>
     <body>
         <!-- Navigation Bar at top of page -->
@@ -163,13 +88,22 @@
                 </div>
                 <div class="col-2">
                     <!-- DOM element that will contain search feature to load pages more quickly -->
-                    <div id="search-tree">
+                    <div class="input-group">
+                        <div class="input-group-prepend"> 
+                          <button class="btn btn-outline-secondary" type="button" onclick="searchTree()">Search</button>
+                        </div>
+                        <input
+                            id="dnd-search-input"
+                            type="text"
+                            class="form-control"
+                            placeholder=""
+                            aria-label=""
+                            aria-describedby="basic-addon1"
+                        >
+                    </div>
+                    <div id="search-results">
 
                     </div>
-                    <!-- jQuery that will... well this might get deleted a.k.a. I'm not too sure, but I'll leave it here for now -->
-                    <script>
-
-                    </script>
                 </div>
             </div>
         </div>
