@@ -65,7 +65,7 @@
         <!-- Body of page, containing library of wiki pages, a center page of information, and a search feature to find articles more quickly -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-2">
+                <div class="col-2 pt-2">
                     <!-- DOM element tree view will insert into -->
                     <div id="tree"></div>
                     <!-- jQuery script that will insert tree view into DOM -->
@@ -80,7 +80,7 @@
                         });
                     </script>
                 </div>
-                <div class="col-8 sticky-top">
+                <div class="col-8 sticky-top pt-2">
                     <!-- DOM element that jQuery will insert text into -->
                     <div id="wiki-page">
 
@@ -88,22 +88,19 @@
                 </div>
                 <div class="col-2">
                     <!-- DOM element that will contain search feature to load pages more quickly -->
-                    <div class="input-group">
-                        <div class="input-group-prepend"> 
-                          <button class="btn btn-outline-secondary" type="button" onclick="searchTree()">Search</button>
-                        </div>
+                    <div class="form-outline">
                         <input
                             id="dnd-search-input"
                             type="text"
                             class="form-control"
-                            placeholder=""
+                            placeholder="Search For Article"
                             aria-label=""
                             aria-describedby="basic-addon1"
+                            aria-placeholder="Search For Article Here"
+                            oninput="searchTree()"
                         >
                     </div>
-                    <div id="search-results">
-
-                    </div>
+                    <div id="search-results"></div>
                 </div>
             </div>
         </div>
