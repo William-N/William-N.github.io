@@ -45,7 +45,7 @@
             }
         </style>
     </head>
-    <body>
+    <body onload="attachJQueryToDOM()">
         <!-- Navigation Bar at top of page -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
@@ -94,11 +94,10 @@
                             type="text"
                             class="form-control"
                             placeholder="Search For Article"
-                            aria-label=""
+                            aria-label="Search For Article"
                             aria-describedby="basic-addon1"
                             aria-placeholder="Search For Article Here"
-                            oninput="searchTree()"
-                        >
+                            onkeyup="searchTree()">
                     </div>
                     <div id="search-results"></div>
                 </div>

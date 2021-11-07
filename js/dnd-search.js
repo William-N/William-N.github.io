@@ -1,3 +1,9 @@
+/**
+ * 
+ * @TODO Explain what this code does
+ * 
+ */
+
 function searchTree() {
     const input = document.getElementById("dnd-search-input")
     const searchResultsElement = document.getElementById("search-results")
@@ -5,15 +11,11 @@ function searchTree() {
     let searchValue = input.value.toUpperCase()
     let displayValues = []
 
-    // clear search-results DOM element when it is populated
-    if(searchResultsElement.innerHTML) {
-        while(searchResultsElement.childElementCount > 0) {
-            let child = searchResultsElement.childNodes.item(0)
-            searchResultsElement.removeChild(child)
-        }
-    }
+    // Remove all existing results if they exist
+    $("#search-results *").each(function() {
+        this.remove()
+    })
 
-    // if search value is empty, terminate
     if(!searchValue) {
         return
     }
@@ -26,9 +28,9 @@ function searchTree() {
                 // Proceed if the file's name is in the search value
                 if(folderOrFile.innerText.toUpperCase().indexOf(searchValue) > -1) {
                     // Create copy of DOM element
-                    let newFile = folderOrFile.cloneNode(true)
+                    let newFile = $(folderOrFile).clone(true)
                     // Add file to array that'll populate HTML
-                    newFile.removeAttribute("style")
+                    newFile.removeAttr("style")
                     displayValues.push(newFile)
                 } 
             }
@@ -37,6 +39,6 @@ function searchTree() {
 
     // Add values to the search results HTML
     displayValues.forEach(folder => {
-        searchResultsElement.appendChild(folder)
+        $(searchResultsElement).append(folder)
     })
 }

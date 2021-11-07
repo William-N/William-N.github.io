@@ -1,88 +1,111 @@
 /**
- * 
- * 
+ *  
+ * @TODO Explain what this code does
  * 
  */
+function attachJQueryToDOM() {
+    $('document').ready(function() {
+        $('#Lokali-People-Cultures-Ariales').click(function() {
+            $('#wiki-page').html(loadAriales())
+        })
 
-$('document').ready(function() {
-    $('#Lokali-People-Cultures-Ariales').click(function() {
-        $('#wiki-page').html(loadAriales())
-    })
+        $('#Lokali-People-Cultures-Astis').click(function() {
+            $('#wiki-page').html(loadAstis())
+        })
 
-    $('#Lokali-People-Cultures-Astis').click(function() {
-        $('#wiki-page').html(loadAstis())
-    })
+        $('#Lokali-People-Cultures-Caybluff').click(function() {
+            $('#wiki-page').html(loadCaybluff())
+        })
 
-    $('#Lokali-People-Cultures-Caybluff').click(function() {
-        $('#wiki-page').html(loadCaybluff())
-    })
+        $('#Lokali-People-Cultures-Gara').click(function() {
+            $('#wiki-page').html(loadGara())
+        })
 
-    $('#Lokali-People-Cultures-Gara').click(function() {
-        $('#wiki-page').html(loadGara())
-    })
+        $('#Lokali-People-Cultures-Godobald').click(function() {
+            $('#wiki-page').html(loadGodobald())
+        })
 
-    $('#Lokali-People-Cultures-Godobald').click(function() {
-        $('#wiki-page').html(loadGodobald())
-    })
+        $('#Lokali-People-Cultures-Skoro').click(function() {
+            $('#wiki-page').html(loadSkoro())
+        })
 
-    $('#Lokali-People-Cultures-Skoro').click(function() {
-        $('#wiki-page').html(loadSkoro())
-    })
+        $('#Lokali-People-Cultures-Ngyemu').click(function() {
+            $('#wiki-page').html(loadNgyemu())
+        })
 
-    $('#Lokali-People-Cultures-Ngyemu').click(function() {
-        $('#wiki-page').html(loadNgyemu())
-    })
+        $('#Lokali-People-Cultures-Kotal').click(function() {
+            $('#wiki-page').html(loadKotal())
+        })
 
-    $('#Lokali-People-Cultures-Kotal').click(function() {
-        $('#wiki-page').html(loadKotal())
-    })
+        $('#Lokali-People-Cultures-Ryuga').click(function() {
+            $('#wiki-page').html(loadRyuga())
+        })
 
-    $('#Lokali-People-Cultures-Ryuga').click(function() {
-        $('#wiki-page').html(loadRyuga())
-    })
+        $('#Lokali-People-Cultures-Tehueypec').click(function() {
+            $('#wiki-page').html(loadTehueypec())
+        })
 
-    $('#Lokali-People-Cultures-Tehueypec').click(function() {
-        $('#wiki-page').html(loadTehueypec())
-    })
+        $('#Lokali-People-Cultures-Tizarna').click(function() {
+            $('#wiki-page').html(loadTizarna())
+        })
 
-    $('#Lokali-People-Cultures-Tizarna').click(function() {
-        $('#wiki-page').html(loadTizarna())
-    })
+        $('#Lokali-People-Cultures-Vevide').click(function() {
+            $('#wiki-page').html(loadVevide())
+        })
 
-    $('#Lokali-People-Cultures-Vevide').click(function() {
-        $('#wiki-page').html(loadVevide())
-    })
+        $('#Lokali-Geography-Continents-Anes').click(function() {
+            $('#wiki-page').html(loadAnes())
+        })
 
-    $('#Lokali-Geography-Continents-Anes').click(function() {
-        $('#wiki-page').html(loadAnes())
-    })
+        $('#Lokali-Geography-Continents-Durios').click(function() {
+            $('#wiki-page').html(loadDurios())
+        })
 
-    $('#Lokali-Geography-Continents-Durios').click(function() {
-        $('#wiki-page').html(loadDurios())
-    })
+        $('#Lokali-Geography-Continents-Duria').click(function() {
+            $('#wiki-page').html(loadDuria())
+        })
 
-    $('#Lokali-Geography-Continents-Duria').click(function() {
-        $('#wiki-page').html(loadDuria())
-    })
+        $('#Magi-Early_Lokalian_Theory').click(function() {
+            $('#wiki-page').html(loadEarlyLokalianTheory())
+        })
 
-    $('#Magi-Early_Lokalian_Theory').click(function() {
-        $('#wiki-page').html(loadEarlyLokalianTheory())
-    })
+        $('#Magi-Magi_2nd_Industrial_Era').click(function() {
+            $('#wiki-page').html(loadMagiInTheSecondIndustrialEra())
+        })
 
-    $('#Magi-Magi_2nd_Industrial_Era').click(function() {
-        $('#wiki-page').html(loadMagiInTheSecondIndustrialEra())
+        $('#Magi-Industrial_Lokalian_Theory').click(function() {
+            $('#wiki-page').html(loadIndustrialLokalianTheory())
+        })
     })
-
-    $('#Magi-Industrial_Lokalian_Theory').click(function() {
-        $('#wiki-page').html(loadIndustrialLokalianTheory())
-    })
-});
+}
 
 /**
  * 
  *  
  * 
  */
+
+function loadName(name) {
+    if(name === "") {
+
+    } else if(name === "") {
+
+    } else if(name === "") {
+        
+    } else if(name === "") {
+        
+    } else if(name === "") {
+        
+    } else if(name === "") {
+        
+    } else if(name === "") {
+        
+    } else if(name === "") {
+        
+    } else if(name === "") {
+        
+    } 
+}
 
 function loadArticle(title, text) {
     return `
