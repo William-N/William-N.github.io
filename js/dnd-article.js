@@ -85,28 +85,6 @@ function attachJQueryToDOM() {
  * 
  */
 
-function loadName(name) {
-    if(name === "") {
-
-    } else if(name === "") {
-
-    } else if(name === "") {
-        
-    } else if(name === "") {
-        
-    } else if(name === "") {
-        
-    } else if(name === "") {
-        
-    } else if(name === "") {
-        
-    } else if(name === "") {
-        
-    } else if(name === "") {
-        
-    } 
-}
-
 function loadArticle(title, text) {
     return `
     <div class='card'>

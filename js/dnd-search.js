@@ -16,6 +16,7 @@ function searchTree() {
         this.remove()
     })
 
+    // If nothing in the search box, terminate
     if(!searchValue) {
         return
     }
